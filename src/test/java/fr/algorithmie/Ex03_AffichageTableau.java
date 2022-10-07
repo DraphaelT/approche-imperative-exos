@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import outils.Exercice;
 import outils.ExerciceRunner;
 import outils.Question;
+import outils.Resultat;
 
 /** Ne modifiez ni les noms des classes, ni les noms des méthodes.
  * Utilisez Resultat.log pour afficher les résultats
@@ -24,6 +25,9 @@ public class Ex03_AffichageTableau {
 	public void affichageTableau() {
 		
 		//TODO LOGUER les éléments du tableau grâce à une boucle
+		for(int loop=1;loop<=array.length;loop++) {
+			Resultat.log(array[loop-1]);
+		}
 	}
 	
 	@Test
@@ -31,5 +35,8 @@ public class Ex03_AffichageTableau {
 	public void affichageTableauOrdreInverse() {
 		
 		//TODO LOGUER les éléments du tableau dans l'ordre inverse
+		for(int loop=array.length;loop>0;loop--) {
+			Resultat.log(array[loop-1]); //Valide pas 
+		}
 	}
 }

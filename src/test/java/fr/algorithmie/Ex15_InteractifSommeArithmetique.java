@@ -31,11 +31,15 @@ public class Ex15_InteractifSommeArithmetique {
 		
 		// TODO Demandez un nombre à l'utilisateur puis LOGUEZ ce nombre 
 		// avec Resultat.log
-		
-		
+		System.out.println("Donnez un chiffre :");
+		int nb = scanner.nextInt();
+		Resultat.log(nb);
 		// TODO LOGUEZ avec Resultat.log la somme de 1 à ce nombre inclus
-		
-		
+		int calcul = 0;
+		for(int loop=1;loop<=nb;loop++) {
+			calcul += loop;
+		}
+		Resultat.log(calcul);
 		scanner.close();
 	}
 

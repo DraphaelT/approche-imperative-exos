@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class SommeDeTableauxChecker extends AbstractChecker {
 
-	public void check1(String logs, Map<String, Object> fieldValues) {
+	public void check1(Map<String, Object> fieldValues) {
 		List<String> lignes = commonChecks();
 		
 		int[] tab1 = (int[])fieldValues.get("tab1");
@@ -28,7 +28,7 @@ public class SommeDeTableauxChecker extends AbstractChecker {
 		}
 	}
 	
-	public void check2(String logs, Map<String, Object> fieldValues) {
+	public void check2(Map<String, Object> fieldValues) {
 		List<String> lignes = commonChecks();
 		
 		int[] array = (int[])fieldValues.get("array");

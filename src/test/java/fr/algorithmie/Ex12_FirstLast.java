@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import outils.Exercice;
 import outils.ExerciceRunner;
 import outils.Question;
+import outils.Resultat;
 
 /**
  * Ne modifiez ni les noms des classes, ni les noms des méthodes. Utilisez
@@ -36,7 +37,21 @@ public class Ex12_FirstLast {
 		// o elle vaut false dans les autres cas
 
 		// TODO LOGUEZ la valeur obtenue pour chacun des tableaux tab1 à tab4
-
+		Resultat.log(algo(tab1));
+		Resultat.log(algo(tab2));
+		Resultat.log(algo(tab3));
+		Resultat.log(algo(tab4));
+		
+		
+	}
+	public static boolean algo(int[] arr) {		
+		for(int loop=1;loop<=arr.length;loop++) {				
+			if(arr[0] ==  arr[arr.length-1]) {
+				return true;
+			}	
+		}
+		return false;
+		
 	}
 
 }
